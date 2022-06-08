@@ -1,0 +1,22 @@
+:root {
+    --background-color: red;
+    --text-color: black;
+    --left-side-width: 40vw;
+    --right-side-width: 60vw;
+}
+
+.container {
+    display: flex;
+}
+
+.left-side {
+    width: var(--left-side-width);
+    background-color: var(background-color);
+}
+
+.right-side {
+    width: var(--right-side-width);
+    background-color: wheat;
+
+}
+
