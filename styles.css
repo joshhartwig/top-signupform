@@ -1,8 +1,17 @@
 :root {
     --background-color: red;
-    --text-color: black;
+    --text: black;
     --left-side-width: 40vw;
     --right-side-width: 60vw;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt);
+    outline: 1px solid red;
 }
 
 .container {
@@ -19,4 +28,3 @@
     background-color: wheat;
 
 }
-
