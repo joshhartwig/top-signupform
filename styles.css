@@ -3,6 +3,7 @@
     --text: black;
     --left-side-width: 40vw;
     --right-side-width: 60vw;
+    --height: 100vh;
 }
 
 * {
@@ -20,11 +21,30 @@
 
 .left-side {
     width: var(--left-side-width);
-    background-color: var(background-color);
+    background-image: url("/img/background.jpg");
+    height: var(--height);
+    background-size: cover;
 }
 
 .right-side {
     width: var(--right-side-width);
     background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
 
+.caption-text {
+    padding: 40vh 10vw 0px 10vw;
+}
+
+.form {
+    padding: 5vh 150px 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+
+}
+
+.input {
+    padding: 0px 20px 20px 20px;
 }
