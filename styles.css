@@ -45,7 +45,7 @@ input {
 
 .left-side {
     width: var(--left-side-width);
-    background-image: url("https://github.com/joshhartwig/top-signupform/blob/main/img/background.jpg");
+    background-image: url("img/background.jpg");
     height: var(--height);
     background-size: cover;
 }
