@@ -1,6 +1,9 @@
+/*https://colorhunt.co/palette/c2ded1ece5c7cdc2ae354259*/
+
 :root {
-    --background-color: red;
-    --text: black;
+    --background-color: #C2DED1;
+    --fnt-family: 'Oswald', sans-serif;
+    --form-color: #ECE5C7;
     --left-side-width: 40vw;
     --right-side-width: 60vw;
     --height: 100vh;
@@ -10,13 +13,34 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(fnt-family);
+    font-size: 1.0em;
     color: var(--txt);
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: 1px solid black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: none;
 }
 
 .container {
     display: flex;
+}
+
+.odin-img {
+    margin: 5vh 0vw 1vh 2vw;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .left-side {
@@ -26,25 +50,86 @@
     background-size: cover;
 }
 
+.left-image-banner {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 30vh 0 0 0;
+}
+
+.left-image-banner-fnt {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 5em;
+}
+
 .right-side {
     width: var(--right-side-width);
-    background-color: wheat;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
 }
 
 .caption-text {
-    padding: 40vh 10vw 0px 10vw;
+    padding: 30vh 10vw 5vh 10vw;
+    font-size: larger;
 }
 
-.form {
-    padding: 5vh 150px 0px 150px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 40vh;
-
+.form-outline {
+    padding: 5vh 150px 5vh 150px;
+    background-color: var(--form-color);
+    box-shadow: 2px 5px #CDC2AE;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 250px;
+    grid-template-areas:
+        'one two'
+        'three four'
+        'five six'
+        'seven eight';
 }
 
-.input {
-    padding: 0px 20px 20px 20px;
+.form-btn {
+    padding: 20px 50px 0px 150px;
+}
+
+.form-button {
+    width: 150px;
+    height: 50px;
+    font-size: 1em;
+}
+
+.login-section {
+    padding: 20px 0px 0px 150px;
+}
+
+.login-link {
+    font-weight: bolder;
+}
+
+[class^='grid-item'] {
+    display: grid;
+    /*outline: 3px dashed red;*/
+}
+
+.grid-item-1 {
+    grid-area: one;
+}
+
+.grid-item-2 {
+    grid-area: two;
+}
+
+.grid-item-3 {
+    grid-area: three;
+}
+
+.grid-item-4 {
+    grid-area: four;
+}
+
+.grid-item-5 {
+    grid-area: five;
+}
+
+.grid-item-6 {
+    grid-area: six;
 }

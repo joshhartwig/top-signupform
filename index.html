@@ -6,52 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&display=swap"
+        rel="stylesheet">
     <script src="scripts.js"></script>
     <title>Sign Up Form</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="left-side"></div>
+        <div class="left-side">
+            <div class="left-image-banner">
+                <img src="/img/odin-lined.png" class="odin-img">
+                <span class="left-image-banner-fnt">ODIN PROJECT</span>
+            </div>
+
+        </div>
         <div class="right-side">
             <div class="caption-text">
-                <p>This is not a real signup form. This service is a ground breaking new software program that allows
+                <p>This is not a real signup form. This service is a ground breaking new software program that
+                    allows
                     customers
-                    to stand up infrastructure in seconds with no prior experience. Code up your dream with just notepad
+                    to stand up infrastructure in seconds with no prior experience. Code up your dream with just
+                    notepad
                     and some coffee.
                 </p>
             </div>
             <div class="form">
                 <form action="#" class="form">
-                    <div class="input">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="name" required>
-                    </div>
-                    <div class="input">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" required>
-                    </div>
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="input">
-                        <label for="phone">Phone Number</label>
-                        <input type="number" name="phone" id="phone" required>
-                    </div>
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    <div class="input">
-                        <label for="cpassword">Confirm Password</label>
-                        <input type="password" name="cpassword" id="cpassword" required>
-                    </div>
-                    <div class="form-example">
-                        <input type="submit" value="Sign Up">
-                    </div>
+                    <div class="form-outline">
+                        <div class="grid-item-1">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="name" required>
+                        </div>
+                        <div class="grid-item-2">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required>
+                        </div>
+                        <div class="grid-item-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="grid-item-4">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </div>
+                        <div class="grid-item-5">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="grid-item-6">
+                            <label for="cpassword">Confirm Password</label>
+                            <input type="password" name="cpassword" id="cpassword" required>
+                        </div>
 
+                    </div>
+                    <div class="form-btn">
+                        <input type="submit" value="Sign Up" class="form-button">
+                    </div>
                 </form>
+                <div class="login-section">
+                    <p>Already have an account? <span class='login-link'><a href="#">Login</a></span></p>
+                </div>
+
             </div>
         </div>
     </div>
